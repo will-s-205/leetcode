@@ -3,8 +3,8 @@ class Solution {
         HashSet<Integer> hset = new HashSet();
 
         for(int i=0;i<nums.length;i++){
-            if(hmap.contains(nums[i])) return true;
-            hmap.put(nums[i]);
+            if(hset.contains(nums[i])) return true;
+            hset.add(nums[i]);
         }
         return false;
     }
