@@ -3,7 +3,7 @@ class Solution {
         int i = 0;
         int j = s.length() - 1;
 
-        for (char c : s.toCharArray()) {
+        while (i < j) {
             if (!Character.isLetterOrDigit(s.charAt(i))) {
                 i++;
                 continue;
